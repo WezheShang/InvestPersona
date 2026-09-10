@@ -1,0 +1,9 @@
+﻿# 本地源材料与工作目录，不上传（root-anchored）
+/references/
+/scripts/
+/notes/
+/data/
+__pycache__/
+*.pyc
+.env
+.DS_Store
