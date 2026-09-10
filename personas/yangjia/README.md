@@ -101,7 +101,7 @@ pip install pandas numpy requests akshare
 | **东财妙想 MCP** | 付费 MCP | 妙想积分 | ✅ 稳定 | 公告 / 资讯 / 板块 / 研报 | `ai.eastmoney.com/skills`；**积分按调用扣**会耗尽 |
 | **新浪 hq.sinajs.cn** | 公开端点 | 无 | ✅ 稳定 | 实时价 / 期货 / 外汇 | GBK 编码，需 Referer；**A 股最稳免费源** |
 | **腾讯 fqkline** | 公开端点 | 无 | ✅ 稳定 | 历史日 K（800 根/3 年）| `web.ifzq.gtimg.cn/appstock/app/fqkline/get`；OCHL 顺序注意 |
-| **东方财富 self_stock.db** | 本地 SQLite | 需 PC 端登录 | ✅ 稳定 | 自选股 / 持仓 | `C:\eastmoney\swc8\config\User\<uid>\self_stock.db`（perpectuum UID = 7320094749573182）|
+| **东方财富 self_stock.db** | 本地 SQLite | 需 PC 端登录 | ✅ 稳定 | 自选股 / 持仓 | PC 终端安装目录下 `config/User/<uid>/self_stock.db`（uid 随登录账号变化）|
 
 **选择建议**：
 - **个人快速上手**：akshare（免费）+ 新浪（实时） + 财联社（情绪）
@@ -194,10 +194,12 @@ for ts_code, name in stock_list:
 
 ```
 InvestPersona/
-├── README.md        ← 本文件
-├── SKILL.md         ← 35KB 核心：6 心模 + 10 启发式 + 表达 DNA + 角色扮演规则
-├── LICENSE          ← AGPL-3.0（代码）
-└── CONTENT_LICENSE  ← CC BY-NC-SA 4.0（内容）
+├── README.md               ← 仓库总览（两条产线 + skill 索引）
+├── LICENSE / CONTENT_LICENSE
+└── personas/
+    └── yangjia/            ← 本 skill
+        ├── README.md       ← 本文件
+        └── SKILL.md        ← 35KB 核心：6 心模 + 10 启发式 + 表达 DNA + 角色扮演规则
 ```
 
 **一手素材不随仓库分发**（版权原因）。SKILL.md 里所有 `[OCR p.X]` / `[清华演讲 §X]` 引用对应的素材需自行获取：
@@ -263,15 +265,15 @@ InvestPersona/
 
 - **养家** —— 心法原文作者，本数字人的源头
 - **菩萨戒子** —— 《养家心法》PDF 整理者
-- **Irene** —— 2019 清华演讲整理 / 调研执行 / 本仓库维护
+- **Irene** —— 2019 清华演讲整理 / 调研执行 / 本项目维护
 - **RapidOCR (PP-OCRv6)** + **akshare** + **Tushare** + **东财妙想** + **财联社** + **新浪财经** + **腾讯财经** —— 数据源作者
 
 ---
 
 ## 📜 License
 
-- **代码 / 配置**（示例脚本等）—— [AGPL-3.0](LICENSE)
-- **内容**（`SKILL.md`、文档）—— [CC BY-NC-SA 4.0](CONTENT_LICENSE)
+- **代码 / 配置**（示例脚本等）—— [AGPL-3.0](../../LICENSE)
+- **内容**（`SKILL.md`、文档）—— [CC BY-NC-SA 4.0](../../CONTENT_LICENSE)
 
 **简言之**：
 - 可以读、可以改、可以二次开发
