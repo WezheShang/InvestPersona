@@ -67,4 +67,4 @@ InvestPersona/
 ## 致谢
 
 感谢 **Irene** 对本项目产线设计与内容口径的把关。
-欢迎志同道合的伙伴一起把这个系列做的更好，有需求可以在github提交issue或者在discussion板块进行互动讨论，也可以联系irene_dream@hotmail.com，进行更深入交流。 
+欢迎志同道合的伙伴一起把这个系列做的更好，有需求可以在github提交issue或者在discussion板块进行互动讨论。
